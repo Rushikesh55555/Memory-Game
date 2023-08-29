@@ -1,0 +1,89 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-image: url('/css/img/bronze-g80bb9a7fe_1280.jpg');
+}
+
+.head {
+    max-width: 480px;
+    border: 2px solid #0c0909;
+    margin: auto;
+    height: 150px;
+    margin-top: 20px;
+    color: #fffffc;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.score{
+   
+    margin-top: 10px;
+}
+
+.container{
+    margin: auto;
+    max-width: 960px;
+    display: grid;
+    gap: 1rem;
+    padding: 20px;
+    grid-template-columns: repeat(3,auto);
+}
+
+.cell div{
+    height: 130px;
+    border-radius: 4px;
+}
+.cell {
+    position: relative;
+    cursor: pointer;
+}
+
+.front{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+     justify-content: center;
+   align-items: center;
+    border: 2px solid #a6a6a6;
+    background-color:  #b5abdc;
+    transform: rotateY(90deg);
+}
+    
+ .back{
+    background-color:  #3b8890;
+}
+
+img{
+    height: 100px;
+    height: 100px;
+}
+.flip {
+    transform: rotate(0deg);
+}
+.match {
+    transform: rotateY(0deg);
+  }
+  
+  .show {
+    transform: rotateY(0deg);
+  } 
+
+  @media screen and (min-width: 770px) {
+    .head {
+      max-width: 760px;
+    }
+  
+    .container {
+      grid-template-columns: repeat(4, auto);
+    }
+  
+    .cell div {
+      height: 170px;
+    }
+  } 
